@@ -90,9 +90,21 @@ Tu servidor debe tener la capacidad de leer los encabezados de cada petición PO
 }
 ```
 
-#### Sintaxis de la solicitud
+### Sintaxis de la solicitud
 
 | Parámtero | Uso | Descripción |
 |-----------|-----|-------------|
 | **source** | Obligatorio, string | Este parámetro especifica el identificador de la emisora EAS-SAME que transmite el mensaje. |
 | **message** | Obligatorio, matriz JSON | Consultar mexican.eassame.monitor.message |
+
+#### mexican.eassame.monitor.message
+
+| Parámtero | Uso | Descripción |
+|-----------|-----|-------------|
+| **code** | Obligatorio, string | Este parámetro especifica el código SAME decodificado de la transmisión. |
+| **timestamp** | Obligatorio, número | Este parámetro especifica la hora de decodificación de la transmisión en formato UNIX. |
+| **date** | Obligatorio, string | Este parámetro especifica la hora (CST) de decodificación de la transmisión en el siguiente formato:  ```yyyy-MM-dd'T'HH:mm:ss```. |
+
+
+## Licencia
+Mexican-EasSame-Monitor is licensed under the Apache License, version 2.0.
