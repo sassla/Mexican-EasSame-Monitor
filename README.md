@@ -75,3 +75,22 @@ Tu servidor debe tener la capacidad de leer los encabezados de cada petición PO
    "Authorization": "key=PASSWD"
 }
 ```
+
+#### Body
+
+```json
+{
+       "source": "XDIF/005",
+       
+        "message": {
+            "code": "EQW",
+            "timestamp": 1663589940,
+            "date": "2022-09-19T12:19:00"
+        }
+}
+```
+
+#### Sintaxis de la solicitud
+
+| Parámtero | Uso | Descripción |
+|-----------|-----|-------------|
