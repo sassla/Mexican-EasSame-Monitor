@@ -101,7 +101,7 @@ Tu servidor debe tener la capacidad de leer los encabezados de cada petición PO
 
 | Parámtero | Uso | Descripción |
 |-----------|-----|-------------|
-| **code** | Obligatorio, string | Este parámetro especifica el código SAME decodificado de la transmisión. |
+| **code** | Obligatorio, string | Este parámetro especifica el código SAME decodificado. |
 | **timestamp** | Obligatorio, número | Este parámetro especifica la fecha de decodificación de la transmisión en formato UNIX. |
 | **date** | Obligatorio, string | Este parámetro especifica la fecha (CST) de decodificación de la transmisión en el siguiente formato:  ```yyyy-MM-dd'T'HH:mm:ss```. |
 
