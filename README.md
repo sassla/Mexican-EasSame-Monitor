@@ -3,6 +3,8 @@ Recibe notificaciones a tu servidor cuando el [Sistema de Alerta Sísmica Mexica
 
 ![EasSame](https://github.com/sassla/Mexican-EasSame-Monitor/blob/main/eas_same.png)
 
+![SASMEX](https://github.com/sassla/Mexican-EasSame-Monitor/blob/main/sasmex_difusion.png)
+
 ## General
 [SASSLA](https://github.com/sassla/sassla) proveé esta herramienta de manera gratuita con fines de divulgación, concientización y educación. Este NO es un servicio de Alerta Sísmica.
 
