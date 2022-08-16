@@ -16,7 +16,7 @@ Recibe notificaciones a tu servidor cuando el [Sistema de Alerta Sísmica Mexica
 |------------------------------|--------------------------------------------------------------------------|
 | Digitalización de códigos SAME | SASSLA decodifica las transmisiones SAME y las digitaliza para transmitirlas a través de internet. |
 | Decodificación rápida | SASSLA decodifica rápidamente las transmisiones SAME. Menos de 2 segundos. |
-| Notificaciones en tiempo real | Recibe las transmisiones SAME en tu servidor en formato JSON en tiempo real. |
+| Notificaciones en tiempo real | Recibe las transmisiones SAME en formato JSON en tiempo real. |
 
 ## Códigos SAME habilitados
 
@@ -52,7 +52,7 @@ Tu servidor debe permitir recibir peticiones POST desde cualquier IP. SASSLA no 
 
 ### Password
 
-Usted debe proporcionar una contraseña para validar las peticiones que reciba su servidor.
+Debes proporcionar una contraseña para validar las peticiones que reciba su servidor.
 
 La contraseña puede ser cualquier combinación de letras, números y símbolos (solo caracteres del estándar ASCII) de máximo 100 caracteres. No se admiten acentos ni caracteres acentuados.
 
