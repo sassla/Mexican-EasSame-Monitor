@@ -28,3 +28,50 @@ En la Ciudad de México, la tecnología EAS-SAME se utiliza únicamente para la 
 
 ## Implementación
 Para recibir notificaciones, tu servidor debe habilitar característias específicas detalladas a continuación:
+
+### Disponibilidad
+
+Tu servidor debe permanecer activo las 24 horas del día para recibir peticiones en cualquier momento.
+
+### Endpoint
+
+Tu servidor debe habilitar un extremo para que SASSLA pueda establecer una conexión ``` TCP ``` y enviar peticiones. Ejemplo:
+
+```
+http://yourserver:port/eas-same
+```
+
+> El url debe incluir la ruta /eas-same
+
+### Method
+
+```
+POST
+```
+Tu servidor debe permitir recibir peticiones POST desde cualquier IP. SASSLA no utiliza un IP específico, cambia constantemente.
+
+### Password
+
+Usted debe proporcionar una contraseña para validar las peticiones que reciba su servidor.
+
+La contraseña puede ser cualquier combinación de letras, números y símbolos (solo caracteres del estándar ASCII) de máximo 100 caracteres. No se admiten acentos ni caracteres acentuados.
+
+No puede usar una contraseña que:
+
+- Sea poco segura. Ej.: "contrasena123".
+- Empiece o termine con un espacio en blanco.
+
+### Request
+
+#### Headers
+
+Tu servidor debe tener la capacidad de leer los encabezados de cada petición POST para identificar dos puntos importantes:
+- Formato del cuerpo de la solicitud.
+- Verificar que la contraseña que incluye la solicitud coincida con la preestablecida por el cliente. 
+
+```json
+{
+   "Content-Type": "application/json",
+   "Authorization": "key=PASSWD"
+}
+```
