@@ -94,3 +94,5 @@ Tu servidor debe tener la capacidad de leer los encabezados de cada petición PO
 
 | Parámtero | Uso | Descripción |
 |-----------|-----|-------------|
+| **source** | Obligatorio, string | Este parámetro especifica el identificador de la emisora EAS-SAME que transmite el mensaje. |
+| **message** | Obligatorio, matriz JSON | Consultar mexican.eassame.monitor.message |
