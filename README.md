@@ -1,5 +1,5 @@
 # Mexican-EasSame-Monitor
-Recibe notificaciones a tu servidor cuando el [Sistema de Alerta Sísmica Mexicano (SASMEX)](http://www.cires.org.mx/sasmex_n.php) transmita avisos a través de las emisoras EAS-SAME en la Ciudad de México.
+Recibe notificaciones a tu servidor cuando el [Sistema de Alerta Sísmica Mexicano (SASMEX)](http://www.cires.org.mx/sasmex_n.php) transmita avisos a través de las emisoras [EAS-SAME](https://en.wikipedia.org/wiki/Specific_Area_Message_Encoding) en la Ciudad de México.
 
 ![EasSame](https://github.com/sassla/Mexican-EasSame-Monitor/blob/main/eas_same.png)
 
@@ -102,9 +102,12 @@ Tu servidor debe tener la capacidad de leer los encabezados de cada petición PO
 | Parámtero | Uso | Descripción |
 |-----------|-----|-------------|
 | **code** | Obligatorio, string | Este parámetro especifica el código SAME decodificado de la transmisión. |
-| **timestamp** | Obligatorio, número | Este parámetro especifica la hora de decodificación de la transmisión en formato UNIX. |
-| **date** | Obligatorio, string | Este parámetro especifica la hora (CST) de decodificación de la transmisión en el siguiente formato:  ```yyyy-MM-dd'T'HH:mm:ss```. |
+| **timestamp** | Obligatorio, número | Este parámetro especifica la fecha de decodificación de la transmisión en formato UNIX. |
+| **date** | Obligatorio, string | Este parámetro especifica la fecha (CST) de decodificación de la transmisión en el siguiente formato:  ```yyyy-MM-dd'T'HH:mm:ss```. |
 
+
+## Solicita implementación 
+Envía un email a ```app@sassla.mx``` con el asunto **"Apply for Mexican-EasSame-Monitor"**. Incluye un método de contacto donde podamos comunicarnos contigo.
 
 ## Licencia
 Mexican-EasSame-Monitor is licensed under the Apache License, version 2.0.
